@@ -1,10 +1,16 @@
-.text {
-  padding: 0px;
-  margin: 16px;
-
+* {
+  box-sizing: border-box;
+}
+.Hover {
   display: inline-flex;
   flex-direction: column;
 }
+.text {
+  padding: 0px;
+  margin: 16px;
+  border-bottom: 1px dotted black;
+}
+
 .tooltip {
   background-color: gray;
   color: white;
@@ -13,8 +19,7 @@
   bottom: -40px;
   margin: 0px;
   display: none;
-  border-top: 1px dotted black;
 }
-.text:hover .tooltip {
+.Hover:hover .tooltip {
   display: block;
 }
