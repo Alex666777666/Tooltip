@@ -1,19 +1,21 @@
 .text {
-  padding: 0px;
+  position: relative;
   margin: 16px;
   border-bottom: 1px dotted black;
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-block;
 }
+
 .tooltip {
-  background-color: gray;
+  position: absolute;
+  display: none;
+  background-color: grey;
   color: white;
   border-radius: 4px;
   padding: 8px;
   bottom: -40px;
-  margin: 0px;
-  display: none;
 }
+
 .text:hover .tooltip {
   display: block;
 }
+
